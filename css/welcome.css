@@ -1,0 +1,87 @@
+@font-face {
+    /* font-family: "Kollektif";
+    src: url("./Hanson-Bold.ttf") format("opentype"); */
+
+    font-family: "Outer-Sans-Bold";
+    src: url("/fonts/MADE Outer Sans Black PERSONAL USE.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "Outer-Sans-Special";
+    src: url("/fonts/MADE Outer Sans Alt Black PERSONAL USE.otf") format("opentype");
+  }
+
+  .title-text:hover span{
+    display: none
+  }
+  
+  #first:hover:before {
+    content: "Home"
+  }
+  #second:hover:before {
+    content: "Projects"
+  }
+  #third:hover:before {
+    content: "Contact"
+  }
+
+  .welcomeBg{
+    margin-left: 7vw;
+    width: 50%;
+    /* border: 3px solid green; */
+    padding: 10px;
+    color: white;
+    font-size: 8vw;
+    display: inline-block;
+  }
+
+  body{
+    display: inline-block;
+    margin-top: 10vw;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .side-welcome{
+    position: relative;
+    display: inline; 
+    color: #fd5c63; 
+    font-size: 200px;  
+    display: inline-block; 
+    font-family: Outer-Sans-Special;
+    padding-bottom: 100px;
+    /* margin-top: 10vw; */
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      /* transform: translateX(-100%); */
+      opacity: 0;
+    }
+    100% {
+      /* transform: translateX(0); */
+      opacity: 1;
+    }
+  }
+  
+
+  body{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    /* padding: 30px; */
+  }
+
+  .title-text{
+    transition-duration: 0.3s;
+  }
+
+  .title-text:hover{
+    color: red;
+    transform: translate(10%);
+    transition-duration: 0.25s;
+    font-style: italic;
+    cursor: pointer;
+  }
+
+  .welcomeBg a{
+    text-decoration: none;
+    color: white;
+  }
